@@ -6,18 +6,21 @@ package ex2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 /**
  * @author formation
  *
  */
 public class CompteCourant extends CompteBancaire {
-	
+
 	private static final Logger LOG = LoggerFactory.getLogger(CompteCourant.class);
 
 	private double decouvert;
 
 	/**
+	 * Constructeur de Compte courant
+	 * 
+	 * @param solde
+	 * @param decouvert
 	 * 
 	 */
 	public CompteCourant(double solde, double decouvert) {
@@ -53,7 +56,7 @@ public class CompteCourant extends CompteBancaire {
 
 	@Override
 	public String toString() {
-		return "CompteCourant: decouvert = " + decouvert + ", solde = " + solde ;
+		return "CompteCourant: decouvert = " + decouvert + ", solde = " + solde;
 	}
 
 }
